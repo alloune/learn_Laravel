@@ -1,3 +1,1 @@
-<?php
-$id=request('id');
-echo "Fiche du produit ". $id;
+<h1>Fiche du produit {{ $id }}</h1>

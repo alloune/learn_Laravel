@@ -1,2 +1,1 @@
-<?php
-echo "Panier";
+<h1>Panier</h1>
