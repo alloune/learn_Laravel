@@ -14,14 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view("hello_world");
+    return "Homepage";
 });
 Route::get('/product', function () {
-    return view("product");
+    return "Liste des produits";
 });
-Route::get('/product/id', function () {
-    return view("id");
+Route::get('/product/{id}', function () {
+ $id =  request('id');
+    return "Fiche produit ".$id ;
 });
 Route::get('/cart', function () {
-    return view("cart");
+    return "Panier";
 });
